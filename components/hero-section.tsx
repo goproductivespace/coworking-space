@@ -1,12 +1,15 @@
-"use client"
+"use client";
 
-import { Button } from "@/components/ui/button"
-import { ArrowRight, Play, Users, Building, Wifi } from "lucide-react"
-import Link from "next/link"
+import { Button } from "@/components/ui/button";
+import { ArrowRight, Play, Users, Building, Wifi } from "lucide-react";
+import Link from "next/link";
 
 export default function HeroSection() {
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section
+      id="home"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+    >
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img
@@ -23,12 +26,18 @@ export default function HeroSection() {
           <Wifi className="h-8 w-8 text-white" />
         </div>
       </div>
-      <div className="absolute top-32 right-16 animate-float" style={{ animationDelay: "1s" }}>
+      <div
+        className="absolute top-32 right-16 animate-float"
+        style={{ animationDelay: "1s" }}
+      >
         <div className="bg-secondary/20 backdrop-blur-sm rounded-full p-4">
           <Users className="h-8 w-8 text-white" />
         </div>
       </div>
-      <div className="absolute bottom-32 left-20 animate-float" style={{ animationDelay: "2s" }}>
+      <div
+        className="absolute bottom-32 left-20 animate-float"
+        style={{ animationDelay: "2s" }}
+      >
         <div className="bg-accent/20 backdrop-blur-sm rounded-full p-4">
           <Building className="h-8 w-8 text-white" />
         </div>
@@ -38,25 +47,29 @@ export default function HeroSection() {
       <div className="relative z-10 container mx-auto px-4 text-center text-white">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-slide-in-left">
-            Your <span className="text-primary">Productive</span> Space Awaits
+            Your <span className="text-yellow-400">Productive</span> Space
+            Awaits
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-gray-200 animate-slide-in-right">
-            Premium coworking solutions in the heart of Noida. Private offices, virtual plans, and flexible workspaces
-            designed for modern professionals.
+            Premium coworking solutions in the heart of Noida. Private offices,
+            virtual plans, and flexible workspaces designed for modern
+            professionals.
           </p>
 
           {/* Stats */}
           <div className="flex flex-wrap justify-center gap-8 mb-10 animate-fade-in-up">
             <div className="text-center">
-              <div className="text-3xl font-bold text-primary">₹500</div>
+              <div className="text-3xl font-bold text-yellow-400">₹500</div>
               <div className="text-sm text-gray-300">Day Pass</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-primary">₹5,000</div>
+              <div className="text-3xl font-bold text-yellow-400">₹5,000</div>
               <div className="text-sm text-gray-300">Monthly Seat</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-primary">6th Floor</div>
+              <div className="text-3xl font-bold text-yellow-400">
+                6th Floor
+              </div>
               <div className="text-sm text-gray-300">Spectrum Mall</div>
             </div>
           </div>
@@ -90,5 +103,5 @@ export default function HeroSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
